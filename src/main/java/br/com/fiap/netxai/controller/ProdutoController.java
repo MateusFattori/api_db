@@ -15,9 +15,9 @@ import br.com.fiap.netxai.model.Produto;
 import br.com.fiap.netxai.repository.ProdutoRepository;
 import lombok.extern.slf4j.Slf4j;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("produto")
+@RequestMapping("produtos")
 @Slf4j
 public class ProdutoController {
 

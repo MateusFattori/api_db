@@ -15,9 +15,9 @@ import br.com.fiap.netxai.model.Cliente;
 import br.com.fiap.netxai.repository.ClienteRepository;
 import lombok.extern.slf4j.Slf4j;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("cliente")
+@RequestMapping("clientes")
 @Slf4j
 public class ClienteController {
     
@@ -38,7 +38,7 @@ public class ClienteController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Cliente> get(@PathVariable String id) { // ID como String
+    public ResponseEntity<Cliente> get(@PathVariable String id) { 
         log.info("Buscando por id: {}", id);
         return clienteRepository.findById(id)
             .map(ResponseEntity::ok)
