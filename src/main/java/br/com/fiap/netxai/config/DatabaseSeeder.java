@@ -86,33 +86,63 @@ public class DatabaseSeeder implements CommandLineRunner {
                     .build()
             ));
 
-
+        // Inserindo Produtos
         produtoRepository.saveAll(
             List.of(
                 Produto.builder().id(null)
                     .nome("sabão")
                     .categoria("limpeza")
                     .valor(98.5f)
+                    .estoque(100f) // Novo campo
+                    .dt_venci("2025-01-01") // Novo campo
+                    .dt_fabrica("2024-01-01") // Novo campo
+                    .marca("Marca A") // Novo campo
+                    .unidadeMedida("kg") // Novo campo
+                    .peso_volume(1.0f) // Novo campo
                     .build(),
                 Produto.builder().id(null)
                     .nome("pão")
                     .categoria("padaria")
                     .valor(4.20f)
+                    .estoque(200f) // Novo campo
+                    .dt_venci("2024-12-31") // Novo campo
+                    .dt_fabrica("2024-11-01") // Novo campo
+                    .marca("Marca B") // Novo campo
+                    .unidadeMedida("kg") // Novo campo
+                    .peso_volume(0.5f) // Novo campo
                     .build(),
                 Produto.builder().id(null)
                     .nome("salame")
                     .categoria("frios")
                     .valor(32.5f)
+                    .estoque(150f) // Novo campo
+                    .dt_venci("2025-02-15") // Novo campo
+                    .dt_fabrica("2024-02-10") // Novo campo
+                    .marca("Marca C") // Novo campo
+                    .unidadeMedida("kg") // Novo campo
+                    .peso_volume(0.25f) // Novo campo
                     .build(),
                 Produto.builder().id(null)
                     .nome("sereal")
                     .categoria("sereal")
                     .valor(67.32f)
+                    .estoque(80f) // Novo campo
+                    .dt_venci("2025-05-20") // Novo campo
+                    .dt_fabrica("2024-03-15") // Novo campo
+                    .marca("Marca D") // Novo campo
+                    .unidadeMedida("kg") // Novo campo
+                    .peso_volume(0.75f) // Novo campo
                     .build(),
                 Produto.builder().id(null)
                     .nome("água")
                     .categoria("bebida")
                     .valor(2.00f)
+                    .estoque(300f) // Novo campo
+                    .dt_venci("2025-01-01") // Novo campo
+                    .dt_fabrica("2024-10-01") // Novo campo
+                    .marca("Marca E") // Novo campo
+                    .unidadeMedida("litro") // Novo campo
+                    .peso_volume(1.0f) // Novo campo
                     .build()
             ));
     }

@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class Cliente {
     
     @Id
-    private String id; // Mude o tipo de Long para String para o MongoDB
+    private String id;
     private String nome;
     private String cpf;
     private String email;
@@ -28,5 +28,6 @@ public class Cliente {
     private String telefone;
     private int pontos;
     private String fidelidade;
+    private String ativo;
 }
 

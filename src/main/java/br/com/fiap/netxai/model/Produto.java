@@ -20,4 +20,10 @@ public class Produto {
     private String nome;
     private String categoria;
     private Float valor;
+    private Float estoque;
+    private String dt_venci;
+    private String dt_fabrica;
+    private String marca;
+    private String unidadeMedida;
+    private Float peso_volume;
 }
